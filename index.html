@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    
+    <title>Kalkulator</title>
+</head>
+<body>
+    <div class="container">
+        <form name="form" class="display">
+            <input class="textarea" name="textarea" placeholder="0" disabled>
+        </form>
+          
+        <div class="buttons">
+            <input type="button" onclick="clean()" value="AC">
+            <input type="button" onclick="del()" value="Del">
+            <input type="button" value="/" class="input-btn" onclick="insert(' / ')">
+            <input type="button" value="*" class="input-btn" onclick="insert(' * ')">
+
+            <input type="button" value="7" class="input-btn" onclick="insert(7)">
+            <input type="button" value="8" class="input-btn" onclick="insert(8)">
+            <input type="button" value="9" class="input-btn" onclick="insert(9)">
+            <input type="button" value="-" class="input-btn" onclick="insert(' - ')">
+
+            <input type="button" value="4" class="input-btn" onclick="insert(4)">
+            <input type="button" value="5" class="input-btn" onclick="insert(5)">
+            <input type="button" value="6" class="input-btn" onclick="insert(6)">
+            <input type="button" value="+" class="input-btn" onclick="insert(' + ')">
+
+            <input type="button" value="1" class="input-btn" onclick="insert(1)">
+            <input type="button" value="2" class="input-btn" onclick="insert(2)">
+            <input type="button" value="3" class="input-btn" onclick="insert(3)">
+
+            <input type="button" value="=" class="input-btn" id="equal" onclick="equal()">
+            <input type="button" value="0" class="input-btn" onclick="insert(0)">
+            <input type="button" value="." class="input-btn" onclick="insert('.')">
+        </div>
+    </div>
+</body>
+</html>
